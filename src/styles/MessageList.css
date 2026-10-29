@@ -13,7 +13,7 @@
 
 .message--user {
   align-self: flex-end;
-  background: var(--gradient-button);
+  background: var(--color-button);
   color: #ffffff;
 }
 
@@ -35,4 +35,15 @@
 .message-content {
   margin: 0;
   line-height: 1.6;
+}
+
+.message-time {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.message--user .message-time {
+  text-align: right;
 }

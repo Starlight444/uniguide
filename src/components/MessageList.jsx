@@ -1,3 +1,4 @@
+import { formatDateTime } from "../utils/formatDateTime";
 import "../styles/MessageList.css";
 
 function MessageList({ messages, isLoading }) {
@@ -9,6 +10,12 @@ function MessageList({ messages, isLoading }) {
             {message.role === "user" ? "คุณ" : "UniGuide"}
           </span>
           <p className="message-content">{message.content}</p>
+          <time
+            className="message-time"
+            dateTime={message.createdAt.toISOString()}
+          >
+            {formatDateTime(message.createdAt)}
+          </time>
         </div>
       ))}
 
