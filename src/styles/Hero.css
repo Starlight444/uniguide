@@ -32,9 +32,9 @@
 }
 
 .hero-title {
-  margin: 28px 0 0;
+  margin: 15px 0 0;
   font-family: var(--font-heading);
-  font-size: clamp(34px, 6vw, 58px);
+  font-size: 48px;
   font-weight: 700;
   line-height: 1.35;
   color: var(--color-text);
@@ -49,8 +49,8 @@
 
 .hero-subtitle {
   max-width: 640px;
-  margin: 24px 0 0;
-  font-size: 18px;
+  margin: 15px 0 0;
+  font-size: 16px;
   line-height: 1.6;
   color: var(--color-muted);
 }

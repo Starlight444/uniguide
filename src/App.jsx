@@ -1,6 +1,8 @@
 import Hero from "./components/Hero";
+import TopicGrid from "./components/TopicGrid";
 import MessageList from "./components/MessageList";
 import ChatInput from "./components/ChatInput";
+import { topics } from "./data/topics";
 import { useChat } from "./hooks/useChat";
 import "./styles/App.css";
 
@@ -12,8 +14,10 @@ function App() {
     <main className="app">
       <Hero />
 
-      {hasMessages && (
+      {hasMessages ? (
         <MessageList messages={messages} isLoading={isLoading} />
+      ) : (
+        <TopicGrid topics={topics} onSelect={ask} />
       )}
 
       <ChatInput onSend={ask} disabled={isLoading} />

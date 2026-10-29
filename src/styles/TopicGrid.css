@@ -2,16 +2,15 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 16px;
-  margin-top: 28px;
+  margin-top: 10px;
 }
 
 .topic-card {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 4px;
-  min-height: 168px;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+  min-height: 70px;
   padding: 20px;
   border: 2px solid var(--color-border);
   border-radius: var(--radius-card);
@@ -31,15 +30,28 @@
 }
 
 .topic-card-icon {
-  font-size: 28px;
-  line-height: 1;
-  margin-bottom: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: #fdeedd;
+  color: #d2541a;
+}
+
+.topic-card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
 }
 
 .topic-card-title {
   font-family: var(--font-heading);
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 400;
 }
 
 .topic-card-question {
