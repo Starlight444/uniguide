@@ -1,0 +1,38 @@
+:root {
+  --color-bg: #fff8ee;
+  --color-surface: #ffffff;
+  --color-border: #f1e2bf;
+  --color-text: #3a1212;
+  --color-muted: #7a5a4a;
+  --color-badge-bg: #fde8a8;
+  --color-badge-text: #8a4a0c;
+  --gradient-brand: linear-gradient(90deg, #c4121c, #f08a1a);
+  --gradient-button: linear-gradient(90deg, #e9837a, #e9a882);
+
+  --font-heading: "Kanit", sans-serif;
+  --font-body: "Sarabun", sans-serif;
+
+  --radius-card: 20px;
+  --radius-pill: 999px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
